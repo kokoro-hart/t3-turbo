@@ -1,14 +1,8 @@
-import type { NextConfig } from 'next'
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  transpilePackages: [
-    "@acme/api",
-    "@acme/auth",
-    "@acme/db",
-    "@acme/ui",
-    "@acme/validators",
-  ],
-}
+  transpilePackages: ["@dir/ui", "@dir/share"],
+};
 
-export default nextConfig
+export default nextConfig;
