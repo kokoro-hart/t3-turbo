@@ -1,19 +1,12 @@
 {
-  "name": "@dir/ui",
+  "name": "@dir/share",
   "private": true,
   "version": "0.1.0",
   "type": "module",
   "exports": {
     ".": {
-      "types": "./dist/src/index.d.ts",
+      "types": "./dist/index.d.ts",
       "default": "./src/index.ts"
-    },
-    "./*": {
-      "types": "./dist/src/*.d.ts",
-      "default": [
-        "./src/*.ts",
-        "./src/*.tsx"
-      ]
     }
   },
   "license": "MIT",
@@ -26,19 +19,15 @@
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
   "dependencies": {
-    "react": "catalog:react",
     "zod": "catalog:"
   },
   "devDependencies": {
     "@dir/eslint-config": "workspace:*",
     "@dir/prettier-config": "workspace:*",
     "@dir/typescript-config": "workspace:*",
-    "@types/react": "catalog:react",
     "eslint": "catalog:",
     "prettier": "catalog:",
-    "react": "catalog:react",
-    "typescript": "catalog:",
-    "zod": "catalog:"
+    "typescript": "catalog:"
   },
   "prettier": "@dir/prettier-config"
 }

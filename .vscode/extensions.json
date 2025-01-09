@@ -1,9 +1,10 @@
 {
   "recommendations": [
+    "editorconfig.editorconfig",
     "dbaeumer.vscode-eslint",
-    "expo.vscode-expo-tools",
     "esbenp.prettier-vscode",
-    "yoavbls.pretty-ts-errors",
-    "bradlc.vscode-tailwindcss"
+    "orta.vscode-jest",
+    "ms-vscode-remote.remote-wsl",
+    "streetsidesoftware.code-spell-checker"
   ]
 }
