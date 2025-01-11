@@ -19,6 +19,7 @@
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
   "dependencies": {
+    "dayjs": "^1.11.13",
     "zod": "catalog:"
   },
   "devDependencies": {

@@ -27,8 +27,6 @@
     "@dir/prettier-config": "workspace:*",
     "@dir/typescript-config": "workspace:*",
     "@types/node": "^20.17.7",
-    "@types/react": "catalog:react19",
-    "@types/react-dom": "catalog:react19",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:"

@@ -11,12 +11,11 @@
     "./*": {
       "types": "./dist/src/*.d.ts",
       "default": [
-        "./src/*.ts",
-        "./src/*.tsx"
+        "./src/**/*.ts",
+        "./src/**/*.tsx"
       ]
     }
   },
-  "license": "MIT",
   "scripts": {
     "build": "tsc",
     "clean": "git clean -xdf .cache .turbo dist node_modules",
@@ -26,6 +25,12 @@
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
   "dependencies": {
+    "@emotion/cache": "^11.14.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.3.1",
+    "@mui/material": "^6.3.1",
+    "@mui/material-nextjs": "^6.3.1",
     "react": "catalog:react19",
     "zod": "catalog:"
   },
@@ -33,7 +38,6 @@
     "@dir/eslint-config": "workspace:*",
     "@dir/prettier-config": "workspace:*",
     "@dir/typescript-config": "workspace:*",
-    "@types/react": "catalog:react19",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "react": "catalog:react19",
