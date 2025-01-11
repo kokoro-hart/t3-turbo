@@ -26,17 +26,17 @@
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
   "dependencies": {
-    "react": "catalog:react",
+    "react": "catalog:react19",
     "zod": "catalog:"
   },
   "devDependencies": {
     "@dir/eslint-config": "workspace:*",
     "@dir/prettier-config": "workspace:*",
     "@dir/typescript-config": "workspace:*",
-    "@types/react": "catalog:react",
+    "@types/react": "catalog:react19",
     "eslint": "catalog:",
     "prettier": "catalog:",
-    "react": "catalog:react",
+    "react": "catalog:react19",
     "typescript": "catalog:",
     "zod": "catalog:"
   },

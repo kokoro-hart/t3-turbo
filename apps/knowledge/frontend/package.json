@@ -1,17 +1,16 @@
 {
-  "name": "@dir/faq-chat-frontend",
+  "name": "@dir/knowledge-frontend",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "pnpm with-env next build",
+    "build": "pnpm next build",
     "clean": "git clean -xdf .cache .next .turbo node_modules",
-    "dev": "pnpm with-env next dev",
+    "dev": "pnpm next dev",
     "format": "prettier --check . --ignore-path ../../.gitignore",
     "lint": "eslint",
-    "start": "pnpm with-env next start",
-    "typecheck": "tsc --noEmit",
-    "with-env": "dotenv -e ../../.env --"
+    "start": "pnpm next start",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@dir/share": "workspace:*",
@@ -19,8 +18,8 @@
     "@trpc/client": "catalog:",
     "@trpc/server": "catalog:",
     "next": "15.1.4",
-    "react": "catalog:react",
-    "react-dom": "catalog:react",
+    "react": "catalog:react19",
+    "react-dom": "catalog:react19",
     "zod": "catalog:"
   },
   "devDependencies": {
@@ -28,9 +27,8 @@
     "@dir/prettier-config": "workspace:*",
     "@dir/typescript-config": "workspace:*",
     "@types/node": "^20.17.7",
-    "@types/react": "catalog:react",
-    "@types/react-dom": "catalog:react",
-    "dotenv-cli": "^7.4.4",
+    "@types/react": "catalog:react19",
+    "@types/react-dom": "catalog:react19",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:"
