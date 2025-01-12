@@ -24,6 +24,25 @@ catalogs:
     zod:
       specifier: ^3.23.8
       version: 3.24.1
+  mui6:
+    '@emotion/cache':
+      specifier: ^11.14.0
+      version: 11.14.0
+    '@emotion/react':
+      specifier: ^11.14.0
+      version: 11.14.0
+    '@emotion/styled':
+      specifier: ^11.14.0
+      version: 11.14.0
+    '@mui/icons-material':
+      specifier: ^6.3.1
+      version: 6.3.1
+    '@mui/material':
+      specifier: ^6.3.1
+      version: 6.3.1
+    '@mui/material-nextjs':
+      specifier: ^6.3.1
+      version: 6.3.1
   react19:
     react:
       specifier: ^19.0.0
@@ -96,6 +115,24 @@ importers:
       '@dir/ui':
         specifier: workspace:*
         version: link:../../../packages/ui
+      '@emotion/cache':
+        specifier: catalog:mui6
+        version: 11.14.0
+      '@emotion/react':
+        specifier: catalog:mui6
+        version: 11.14.0(@types/react@19.0.4)(react@19.0.0)
+      '@emotion/styled':
+        specifier: catalog:mui6
+        version: 11.14.0(@emotion/react@11.14.0(@types/react@19.0.4)(react@19.0.0))(@types/react@19.0.4)(react@19.0.0)
+      '@mui/icons-material':
+        specifier: catalog:mui6
+        version: 6.3.1(@mui/material@6.3.1(@emotion/react@11.14.0(@types/react@19.0.4)(react@19.0.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@19.0.4)(react@19.0.0))(@types/react@19.0.4)(react@19.0.0))(@types/react@19.0.4)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(@types/react@19.0.4)(react@19.0.0)
+      '@mui/material':
+        specifier: catalog:mui6
+        version: 6.3.1(@emotion/react@11.14.0(@types/react@19.0.4)(react@19.0.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@19.0.4)(react@19.0.0))(@types/react@19.0.4)(react@19.0.0))(@types/react@19.0.4)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@mui/material-nextjs':
+        specifier: catalog:mui6
+        version: 6.3.1(@emotion/cache@11.14.0)(@emotion/react@11.14.0(@types/react@19.0.4)(react@19.0.0))(@types/react@19.0.4)(next@15.1.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)
       '@trpc/client':
         specifier: 'catalog:'
         version: 11.0.0-rc.695(@trpc/server@11.0.0-rc.695(typescript@5.7.3))(typescript@5.7.3)
@@ -168,22 +205,22 @@ importers:
   packages/ui:
     dependencies:
       '@emotion/cache':
-        specifier: ^11.14.0
+        specifier: catalog:mui6
         version: 11.14.0
       '@emotion/react':
-        specifier: ^11.14.0
+        specifier: catalog:mui6
         version: 11.14.0(@types/react@19.0.4)(react@19.0.0)
       '@emotion/styled':
-        specifier: ^11.14.0
+        specifier: catalog:mui6
         version: 11.14.0(@emotion/react@11.14.0(@types/react@19.0.4)(react@19.0.0))(@types/react@19.0.4)(react@19.0.0)
       '@mui/icons-material':
-        specifier: ^6.3.1
+        specifier: catalog:mui6
         version: 6.3.1(@mui/material@6.3.1(@emotion/react@11.14.0(@types/react@19.0.4)(react@19.0.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@19.0.4)(react@19.0.0))(@types/react@19.0.4)(react@19.0.0))(@types/react@19.0.4)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(@types/react@19.0.4)(react@19.0.0)
       '@mui/material':
-        specifier: ^6.3.1
+        specifier: catalog:mui6
         version: 6.3.1(@emotion/react@11.14.0(@types/react@19.0.4)(react@19.0.0))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@19.0.4)(react@19.0.0))(@types/react@19.0.4)(react@19.0.0))(@types/react@19.0.4)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@mui/material-nextjs':
-        specifier: ^6.3.1
+        specifier: catalog:mui6
         version: 6.3.1(@emotion/cache@11.14.0)(@emotion/react@11.14.0(@types/react@19.0.4)(react@19.0.0))(@types/react@19.0.4)(next@15.1.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)
       react:
         specifier: catalog:react19

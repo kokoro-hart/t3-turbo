@@ -1,14 +1,18 @@
 import { Metadata } from "next";
 import { Button } from "@dir/ui";
 
+import { Container } from "~/components/layouts";
+
 export const metadata: Metadata = {
-  title: "Faq Chat",
+  title: "Home",
 };
 
 export default function Home() {
   return (
-    <div>
-      <Button>ボタン</Button>
-    </div>
+    <Container>
+      <Button color="info" variant="outlined">
+        ボタン
+      </Button>
+    </Container>
   );
 }

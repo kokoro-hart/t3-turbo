@@ -15,6 +15,12 @@
   "dependencies": {
     "@dir/share": "workspace:*",
     "@dir/ui": "workspace:*",
+    "@emotion/cache": "catalog:mui6",
+    "@emotion/react": "catalog:mui6",
+    "@emotion/styled": "catalog:mui6",
+    "@mui/icons-material": "catalog:mui6",
+    "@mui/material": "catalog:mui6",
+    "@mui/material-nextjs": "catalog:mui6",
     "@trpc/client": "catalog:",
     "@trpc/server": "catalog:",
     "next": "15.1.4",

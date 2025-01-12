@@ -1,1 +1,1 @@
-export * from "./getPath";
+export * from "./date";
