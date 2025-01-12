@@ -20,6 +20,7 @@
     "build": "tsc",
     "clean": "git clean -xdf .cache .turbo dist node_modules",
     "dev": "tsc",
+    "storybook": "storybook dev -p 6006",
     "format": "prettier --check . --ignore-path ../../.gitignore",
     "lint": "eslint",
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
@@ -35,12 +36,22 @@
     "zod": "catalog:"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.3",
     "@dir/eslint-config": "workspace:*",
     "@dir/prettier-config": "workspace:*",
     "@dir/typescript-config": "workspace:*",
+    "@storybook/addon-essentials": "^8.4.7",
+    "@storybook/addon-interactions": "^8.4.7",
+    "@storybook/addon-links": "^8.4.7",
+    "@storybook/addon-onboarding": "^8.4.7",
+    "@storybook/blocks": "^8.4.7",
+    "@storybook/nextjs": "^8.4.7",
+    "@storybook/react": "^8.4.7",
+    "@storybook/test": "^8.4.7",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "react": "catalog:react19",
+    "storybook": "^8.4.7",
     "typescript": "catalog:",
     "zod": "catalog:"
   },
