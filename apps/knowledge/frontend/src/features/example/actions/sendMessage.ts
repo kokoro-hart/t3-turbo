@@ -4,8 +4,8 @@ import { revalidatePath } from "next/cache";
 
 import { validators } from "@dir/share";
 
-import { trpc } from "~/trpc/server";
 import type { RouterOutputs } from "~/trpc/types";
+import { trpc } from "~/trpc/server";
 
 type SendMessageResult =
   | RouterOutputs["example"]["sendMessage"]

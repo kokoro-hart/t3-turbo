@@ -6,21 +6,17 @@ import { PORT } from "./configs";
 import { appRouter } from "./routers";
 import { createTRPCContext } from "./trpc";
 
-async function main() {
-  const app = express();
-  app.use(cors());
+const app = express();
+app.use(cors());
 
-  app.use(
-    "/trpc",
-    trpcExpress.createExpressMiddleware({
-      router: appRouter,
-      createContext: createTRPCContext,
-    }),
-  );
+app.use(
+  "/trpc",
+  trpcExpress.createExpressMiddleware({
+    router: appRouter,
+    createContext: createTRPCContext,
+  }),
+);
 
-  app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}/trpc`);
-  });
-}
-
-main().catch(console.error);
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}/trpc`);
+});

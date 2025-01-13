@@ -1,4 +1,4 @@
-import type { ComponentPropsWithoutRef} from "react";
+import type { ComponentPropsWithoutRef } from "react";
 import { forwardRef } from "react";
 import MuiButton from "@mui/material/Button";
 

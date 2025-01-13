@@ -21,6 +21,7 @@
     "@mui/icons-material": "catalog:mui6",
     "@mui/material": "catalog:mui6",
     "@mui/material-nextjs": "catalog:mui6",
+    "@t3-oss/env-nextjs": "^0.11.1",
     "@tanstack/react-query": "catalog:",
     "@trpc/client": "catalog:",
     "@trpc/react-query": "catalog:",
