@@ -4,7 +4,7 @@ import { validators } from "@dir/share";
 
 import { publicProcedure } from "../trpc";
 
-let messages = [
+const messages = [
   {
     id: 1,
     content: "message 1",

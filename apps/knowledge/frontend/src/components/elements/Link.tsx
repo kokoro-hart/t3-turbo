@@ -1,4 +1,4 @@
-import { ComponentPropsWithoutRef } from "react";
+import type { ComponentPropsWithoutRef } from "react";
 import NextLink from "next/link";
 
 type LinkProps = ComponentPropsWithoutRef<typeof NextLink>;

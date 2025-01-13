@@ -1,4 +1,5 @@
-import React, { ComponentPropsWithoutRef } from "react";
+import type { ComponentPropsWithoutRef } from "react";
+import React from "react";
 import MuiLinearProgress from "@mui/material/LinearProgress";
 
 type MuiLinearProgressProps = ComponentPropsWithoutRef<

@@ -1,4 +1,5 @@
-import { Fragment, PropsWithChildren } from "react";
+import type { PropsWithChildren } from "react";
+import { Fragment } from "react";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import CssBaseline from "@mui/material/CssBaseline";
 import InitColorSchemeScript from "@mui/material/InitColorSchemeScript";

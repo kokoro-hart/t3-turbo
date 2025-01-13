@@ -1,4 +1,4 @@
-import { ConfigType } from "dayjs";
+import type { ConfigType } from "dayjs";
 
 import { DAY_OF_THE_WEEK_LABELS, DISPLAY_DATE_FORMAT } from "../configs";
 import { dayjs } from "../libs";

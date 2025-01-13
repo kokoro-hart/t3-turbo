@@ -1,4 +1,5 @@
-import { ComponentPropsWithoutRef, forwardRef } from "react";
+import type { ComponentPropsWithoutRef} from "react";
+import { forwardRef } from "react";
 import MuiContainer from "@mui/material/Container";
 
 type ContainerProps = ComponentPropsWithoutRef<typeof MuiContainer>;
