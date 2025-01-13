@@ -2,7 +2,7 @@ import { unstable_httpBatchStreamLink } from "@trpc/client";
 import { createTRPCReact } from "@trpc/react-query";
 import superjson from "superjson";
 
-import type { AppRouter } from "../../../backend/src/routes/index";
+import type { AppRouter } from "./types";
 
 export const trpc = createTRPCReact<AppRouter>();
 
