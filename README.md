@@ -1,8 +1,9 @@
 # Project Name
 
-## 開発・運用のルール
+## リンク集
 
-[CONTRIBUTING.md](./CONTRIBUTING.md)を参照
+- プロジェクトの構成は [project-structure.md](./docs/project-structure.md) を参照
+- 開発・運用のルールは [contributing.md](./docs/contributing.md) を参照
 
 ## 環境構築手順
 
