@@ -6,6 +6,6 @@ import Box from "@mui/material/Box";
 import { trpc } from "~/trpc/client";
 
 export function ClientComponent() {
-  const [data] = trpc.chat.getMessages.useSuspenseQuery();
-  return <Box>{JSON.stringify(data)}</Box>;
+  const [messages] = trpc.example.getMessages.useSuspenseQuery();
+  return <Box>messages: {JSON.stringify(messages)}</Box>;
 }

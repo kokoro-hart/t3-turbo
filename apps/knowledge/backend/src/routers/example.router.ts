@@ -1,5 +1,6 @@
 import type { TRPCRouterRecord } from "@trpc/server";
-import { z } from "zod";
+
+import { validators } from "@dir/share";
 
 import { publicProcedure } from "../trpc";
 
@@ -10,10 +11,10 @@ let messages = [
   },
 ];
 
-export const chatRouter = {
+export const exampleRouter = {
   getMessages: publicProcedure.query(() => messages),
-  send: publicProcedure
-    .input(z.object({ content: z.string() }))
+  sendMessage: publicProcedure
+    .input(validators.example.sendMessageInput)
     .mutation(({ input }) => {
       const newMessage = {
         id: messages.length + 1,
@@ -23,7 +24,6 @@ export const chatRouter = {
 
       return {
         ...newMessage,
-        success: true,
       };
     }),
 } satisfies TRPCRouterRecord;
