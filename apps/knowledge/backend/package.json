@@ -12,8 +12,8 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
+    "dev": "nodemon --watch src --exec \"tsx src/server.ts\"",
     "clean": "git clean -xdf .cache .turbo dist node_modules",
-    "dev": "tsc",
     "format": "prettier --check . --ignore-path ../../.gitignore",
     "lint": "eslint",
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
@@ -21,6 +21,9 @@
   "dependencies": {
     "@dir/share": "workspace:*",
     "@trpc/server": "catalog:",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
     "superjson": "2.2.1",
     "zod": "catalog:"
   },
@@ -28,8 +31,11 @@
     "@dir/eslint-config": "workspace:*",
     "@dir/prettier-config": "workspace:*",
     "@dir/typescript-config": "workspace:*",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
     "eslint": "catalog:",
     "prettier": "catalog:",
+    "tsx": "^4.19.2",
     "typescript": "catalog:"
   },
   "prettier": "@dir/prettier-config"

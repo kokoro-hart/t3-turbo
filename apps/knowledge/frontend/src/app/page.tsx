@@ -1,7 +1,9 @@
 import { Metadata } from "next";
+
 import { Button } from "@dir/ui";
 
 import { Container } from "~/components/layouts";
+import { Example } from "~/features/example";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -13,6 +15,7 @@ export default function Home() {
       <Button color="info" variant="outlined">
         ボタン
       </Button>
+      <Example />
     </Container>
   );
 }

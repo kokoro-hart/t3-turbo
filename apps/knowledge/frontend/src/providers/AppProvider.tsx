@@ -1,6 +1,13 @@
 import { PropsWithChildren } from "react";
+
 import { MuiProvider } from "@dir/ui";
 
+import { TrpcClientProvider } from "./TrpcClientProvider";
+
 export function AppProvider({ children }: PropsWithChildren) {
-  return <MuiProvider>{children}</MuiProvider>;
+  return (
+    <TrpcClientProvider>
+      <MuiProvider>{children}</MuiProvider>
+    </TrpcClientProvider>
+  );
 }
